@@ -11,8 +11,8 @@ class UnionFind:
     def union(self, x, y):
         px = self.find(x)
         py = self.find(y)
-        if x!= y:
-            self.parent[x] = y
+        if px!= py:
+            self.parent[px] = py
             return True
         return False
 
